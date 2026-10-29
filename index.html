@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数独：脑力诊所 隐私政策</title>
+<meta name="description" content="《数独：脑力诊所》隐私政策">
+<style>
+  :root{
+    --ink:#1f2328; --ink2:#4a5058; --line:#e3e6ea; --bg:#ffffff;
+    --soft:#f6f7f9; --accent:#8a5a2b; --max:760px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+    font-size:16px; line-height:1.85; letter-spacing:.01em;
+  }
+  .wrap{max-width:var(--max); margin:0 auto; padding:56px 24px 96px}
+  header{border-bottom:1px solid var(--line); padding-bottom:28px; margin-bottom:40px}
+  .app{font-size:14px; color:var(--accent); letter-spacing:.14em; margin:0 0 10px}
+  h1{font-size:30px; line-height:1.35; margin:0 0 18px; font-weight:700; letter-spacing:.02em}
+  .meta{font-size:14px; color:var(--ink2); line-height:2; margin:0}
+  .meta b{font-weight:600; color:var(--ink)}
+  .lead{background:var(--soft); border-radius:10px; padding:20px 22px; margin:0 0 40px; font-size:15px; color:var(--ink2)}
+  .lead p{margin:0 0 10px}
+  .lead p:last-child{margin:0}
+  nav{background:var(--soft); border-radius:10px; padding:20px 22px; margin:0 0 44px}
+  nav p{margin:0 0 10px; font-size:14px; color:var(--ink2); letter-spacing:.06em}
+  nav ol{margin:0; padding-left:20px; font-size:15px; color:var(--ink2)}
+  nav li{margin:3px 0}
+  nav a{color:var(--ink2); text-decoration:none; border-bottom:1px solid transparent}
+  nav a:hover{color:var(--accent); border-bottom-color:var(--accent)}
+  h2{font-size:20px; margin:52px 0 16px; padding-top:6px; font-weight:700; letter-spacing:.01em}
+  h3{font-size:16px; margin:28px 0 10px; font-weight:600; color:var(--ink)}
+  p{margin:0 0 14px}
+  ul,ol{margin:0 0 16px; padding-left:22px}
+  li{margin:6px 0}
+  table{width:100%; border-collapse:collapse; margin:14px 0 20px; font-size:14.5px; table-layout:fixed}
+  th,td{border:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top; word-break:break-word}
+  th{background:var(--soft); font-weight:600}
+  .t-perm col.c1{width:16%} .t-perm col.c2{width:42%}
+  .t-perm col.c3{width:11%} .t-perm col.c4{width:31%}
+  .t-sdk col.c1{width:25%} .t-sdk col.c2{width:30%} .t-sdk col.c3{width:45%}
+  .note{border-left:3px solid var(--accent); padding:2px 0 2px 16px; margin:18px 0; color:var(--ink2); font-size:15px}
+  code{background:var(--soft); border-radius:4px; padding:1px 6px; font-size:13.5px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+  footer{margin-top:64px; padding-top:24px; border-top:1px solid var(--line); font-size:13.5px; color:var(--ink2); line-height:1.9}
+  a{color:var(--accent)}
+  @media (max-width:520px){
+    .wrap{padding:36px 18px 72px}
+    h1{font-size:24px}
+    h2{font-size:18px; margin-top:40px}
+    body{font-size:15.5px}
+  }
+  /* 手机上把两列表格改成卡片：四列并排会挤成竖条，审核多半用手机点开 */
+  @media (max-width:640px){
+    table.t-perm, table.t-sdk{
+      display:block; width:100%; max-width:100%; table-layout:auto;
+      border:0; margin:14px 0 20px;
+    }
+    table.t-perm tbody, table.t-sdk tbody,
+    table.t-perm tr, table.t-sdk tr,
+    table.t-perm td, table.t-sdk td{display:block; width:auto; max-width:100%}
+    table.t-perm colgroup, table.t-sdk colgroup,
+    table.t-perm thead, table.t-sdk thead{display:none}
+    table.t-perm col, table.t-sdk col{width:auto !important}
+    table.t-perm tr, table.t-sdk tr{
+      border:1px solid var(--line); border-radius:10px;
+      margin:0 0 12px; padding:0; background:#fff; overflow:hidden;
+    }
+    table.t-perm td, table.t-sdk td{
+      border:0; border-bottom:1px dashed var(--line);
+      padding:9px 13px; font-size:14.5px; line-height:1.8;
+      overflow-wrap:anywhere;
+    }
+    table.t-perm tr td:last-child, table.t-sdk tr td:last-child{border-bottom:0}
+    table.t-perm td::before, table.t-sdk td::before{
+      content:attr(data-label); display:block;
+      font-size:12px; color:var(--ink2); letter-spacing:.08em; margin-bottom:2px;
+    }
+    table.t-perm td:first-child, table.t-sdk td:first-child{
+      background:var(--soft); font-weight:600; font-size:15px; padding-top:8px;
+    }
+    table.t-perm td:first-child::before, table.t-sdk td:first-child::before{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="app">数独：脑力诊所</p>
+  <h1>隐私政策</h1>
+  <p class="meta">
+    版本：v2.1<br>
+    更新日期：2026 年 10 月 29 日<br>
+    生效日期：2026 年 10 月 29 日<br>
+    适用产品：移动应用程序「数独：脑力诊所」（Android 版，含通过 TapTap 平台运行的版本）
+  </p>
+  <p class="note">本次修订（v2.1）：更正了此前关于网络权限的表述。为避免误解，现明确说明：<b>观看激励视频广告需要联网，断网时无法通过广告补充电力</b>；电力的每日自动恢复不受网络影响。此外，第六节关于「是否存在网络传输」的描述也已按广告服务的实际情况更正。</p>
+</header>
+
+<div class="lead">
+  <p>本政策由<b>竹谷荔工作室</b>（个人开发者，以下简称“我们”）制定并发布，用于说明我们在您使用「数独：脑力诊所」（以下简称“本游戏”）过程中如何对待您的个人信息。</p>
+  <p>我们先把最重要的两句话放在前面：<b>本游戏不要求注册、不要求登录，我们没有服务器，不收集、不存储、不上传您的任何个人信息。</b></p>
+  <p>唯一会接触到设备信息的地方，是游戏里<b>可选</b>的「看广告补电力」：为此接入了 TapADN 广告服务，它只读取广告投放所必需的设备标识，而且<b>只有您主动点开广告时才会发生</b>。您不点广告，我们就不会向广告服务商请求任何广告。下面各节是对这两句话的逐项说明。</p>
+</div>
+
+<nav>
+  <p>本政策将帮助您了解以下内容</p>
+  <ol>
+    <li><a href="#s1">我们如何收集和使用您的个人信息</a></li>
+    <li><a href="#s2">我们如何保存您的个人信息</a></li>
+    <li><a href="#s3">我们如何使用 Cookies 和同类技术</a></li>
+    <li><a href="#s4">我们如何共享、转让、公开披露您的个人信息</a></li>
+    <li><a href="#s5">第三方产品或服务如何获得您的个人信息</a></li>
+    <li><a href="#s6">我们如何保护您的个人信息</a></li>
+    <li><a href="#s7">您如何管理您的个人信息</a></li>
+    <li><a href="#s8">我们如何处理未成年人的个人信息</a></li>
+    <li><a href="#s9">本隐私政策如何更新</a></li>
+    <li><a href="#s10">如何联系我们</a></li>
+  </ol>
+</nav>
+
+<h2 id="s1">一、我们如何收集和使用您的个人信息</h2>
+
+<h3>（一）我们收集哪些信息</h3>
+<p>本游戏是一款单机数独游戏。<b>在您使用本游戏的过程中，游戏本体不收集您的任何个人信息。</b>具体包括：</p>
+<ul>
+  <li>不收集身份信息：本游戏无需注册账号、无需登录，不收集您的姓名、手机号码、电子邮箱、身份证件号码。</li>
+  <li>不收集设备识别信息：游戏本体不读取、不收集国际移动设备身份码（IMEI）、移动设备识别码（MEID）、Android ID、广告标识符（OAID）、网卡地址（MAC）、国际移动用户识别码（IMSI）、设备序列号（Serial）。<b>唯一的例外是您主动观看广告时</b>，广告服务商会读取广告投放所必需的设备标识，具体范围与用途见第五节。</li>
+  <li>不收集位置信息：不获取您的精准定位或粗略定位，也未向广告服务商开放位置权限。</li>
+  <li>不收集通讯与内容信息：不读取您的通讯录、短信、通话记录、相册、文件、剪贴板。</li>
+  <li>不收集生物识别信息：不调用摄像头、不调用麦克风、不进行人脸或声纹识别。</li>
+  <li>不收集应用列表：本游戏不申请「应用列表」相关权限，也未向广告服务商开放该能力。</li>
+</ul>
+
+<h3>（二）保存在您设备本地的信息</h3>
+<p>为了记住您的游戏进度，本游戏会把下列内容保存在您设备的应用私有存储空间中：</p>
+<ul>
+  <li>已通过的关卡、每关的用时与步数、当前章节进度；</li>
+  <li>电力值、检查次数等游戏内数值及其刷新时间；</li>
+  <li>音量、音效开关等本地设置。</li>
+</ul>
+<p>上述信息<b>仅保存在您的设备上，不会上传至我们的服务器，我们无法读取、也无法获取</b>。它们不包含任何可直接或间接识别您个人身份的内容。您卸载本游戏或清除应用数据后，上述信息即被删除。</p>
+
+<h3>（三）设备权限调用情况</h3>
+<p>本游戏仅申请下列三项系统权限，均为普通权限，安装时由系统自动授予，不会向您弹出授权询问框。除此之外，本游戏不申请任何其他权限。</p>
+<table class="t-perm">
+  <colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"></colgroup>
+  <thead>
+  <tr><th>设备权限</th><th>调用权限的目的</th><th>是否询问</th><th>用户可否关闭权限</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td data-label="设备权限">网络访问<br>（INTERNET）</td>
+    <td data-label="调用权限的目的">仅用于向广告服务商请求和获取广告素材、加载广告落地页。游戏本体的全部内容（关卡、字库、音乐、图片）均内置于安装包内，<b>不联网也能进入游戏</b>。但需要向您说明：<b>联网是观看激励视频广告的前提，断网时无法观看广告，也就无法通过广告补充电力</b>（电力的每日自动恢复不受影响）。</td>
+    <td data-label="是否询问">否</td>
+    <td data-label="用户可否关闭权限">可以。您可在系统设置中限制本游戏的联网权限。关闭后游戏本体仍可运行，但「看广告补电力」将无法使用。</td>
+  </tr>
+  <tr>
+    <td data-label="设备权限">查看网络状态<br>（ACCESS_NETWORK_STATE）</td>
+    <td data-label="调用权限的目的">用于判断设备当前是否联网，仅服务于广告功能：未联网时，本游戏不会向广告服务商发起请求，也不会因「广告已观看」而发放任何奖励，以免在无网络的情况下产生误判。<b>本权限只判断「有没有网」，不读取您的网络内容、不获取您的上网记录。</b></td>
+    <td data-label="是否询问">否</td>
+    <td data-label="用户可否关闭权限">可以。关闭后游戏本体仍可运行，但观看广告前后将无法判断网络状态，「看广告补电力」功能可能无法正常使用。</td>
+  </tr>
+  <tr>
+    <td data-label="设备权限">防止设备休眠<br>（WAKE_LOCK）</td>
+    <td data-label="调用权限的目的">在您进行关卡时保持屏幕常亮，避免因熄屏中断游戏。</td>
+    <td data-label="是否询问">否</td>
+    <td data-label="用户可否关闭权限">可以。您可在系统设置中限制本游戏的后台活动。</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3>（四）关于游戏内的激励视频广告</h3>
+<p>本游戏含有一个<b>可选</b>的激励视频广告入口：当电力不足时，您可以选择观看一段视频广告来补充电力。</p>
+<ul>
+    <li><b>不看广告也能玩。</b>广告只是恢复电力的其中一条途径：电力每日 0 点会自动恢复，因此不看广告也能持续玩下去。不看广告不影响任何关卡内容、不影响通关、不影响存档。</li>
+    <li><b>只有您主动点击才会触发。</b>本游戏没有开屏广告、没有插屏广告、没有 Banner 悬浮广告、没有信息流广告，也不会在您不知情时自动播放广告。</li>
+    <li><b>已关闭的能力。</b>我们在接入广告服务时，已明确关闭其对您位置、电话状态与设备序列号、外部存储、应用安装列表、传感器（摇一摇）的访问。广告服务商能够获取的只有：广告标识符（OAID）、Android ID、网络类型与网络状态，用于广告投放、频次控制与效果统计。</li>
+    <li><b>用途仅限于广告。</b>上述信息仅用于广告的投放、频次控制与效果统计，我们不会将其用于其他用途，也不会自行留存。同时提醒您：由于观看广告必须联网，<b>在断网状态下广告入口无法使用</b>，此时电力只能依靠每日自动恢复。</li>
+</ul>
+<p>如果您不希望自己的设备标识被用于个性化广告，可以发送邮件至 <b>3521753479@qq.com</b>（标题注明「关闭个性化广告」）告知我们，我们会在核实后为您关闭个性化投放；关闭后您仍会看到广告，但不再基于您的设备标识进行匹配。您也可以选择完全不观看广告。</p>
+
+<h3>（五）我们如何使用您的个人信息</h3>
+<p>由于游戏本体不收集您的个人信息，因此不存在我们自行对您的个人信息进行使用、分析、画像或定向推送的情形。本游戏不含任何由我们实施用户画像或精准营销的功能。广告服务商在其自身服务范围内进行广告匹配，其处理规则见第五节。</p>
+
+<h3>（六）征得授权同意的例外</h3>
+<p>根据相关法律法规及国家标准，以下情形中，我们可能会收集、使用您的相关个人信息而无需征求您的授权同意：与我们履行法律法规规定的义务相关的；与国家安全、国防安全直接相关的；与公共安全、公共卫生、重大公共利益直接相关的；与刑事侦查、起诉、审判和判决执行等直接相关的；出于维护个人信息主体或其他个人的生命、财产等重大合法权益但又很难得到本人授权同意的；所涉及的个人信息是个人信息主体或监护人自行向社会公众公开的；根据个人信息主体要求签订和履行合同所必需的；从合法公开披露的信息中收集个人信息的；维护所提供产品或服务的安全稳定运行所必需的。</p>
+
+<h2 id="s2">二、我们如何保存您的个人信息</h2>
+<p>本游戏不向任何服务器上传个人信息，因此<b>我们不存在服务器端的信息存储</b>，也不存在信息的保存期限、存储地域或跨境传输问题。</p>
+<p>保存在您设备本地的游戏进度与设置，其保存期限由您自行控制：</p>
+<ul>
+  <li>您可以随时通过「系统设置 → 应用 → 数独：脑力诊所 → 存储 → 清除数据」删除全部本地数据；</li>
+  <li>卸载本游戏会一并删除上述数据；</li>
+  <li>删除后不可恢复，游戏进度将从第一关重新开始。</li>
+</ul>
+
+<h2 id="s3">三、我们如何使用 Cookies 和同类技术</h2>
+<p>本游戏不使用 Cookies，不使用 Flash Cookies、像素标签、软件开发展标识符、本地共享对象等任何同类追踪技术，也不进行任何形式的用户行为统计与埋点。</p>
+
+<h2 id="s4">四、我们如何共享、转让、公开披露您的个人信息</h2>
+<p>由于我们不收集您的个人信息，因此<b>我们不会向任何第三方共享、转让、公开披露您的个人信息</b>，也不存在委托第三方处理您个人信息的情形。</p>
+<p>本游戏不含社交功能，不含用户生成内容发布功能，不含任何向其他玩家展示您信息的功能。</p>
+
+<h2 id="s5">五、第三方产品或服务如何获得您的个人信息</h2>
+<p>本游戏集成了<b>一个</b>第三方软件开发工具包（SDK），仅用于展示激励视频广告。除此之外没有集成任何统计、推送、登录、支付或社交类 SDK。</p>
+<table class="t-sdk">
+  <colgroup><col class="c1"><col class="c2"><col class="c3"></colgroup>
+  <thead>
+  <tr><th>第三方名称</th><th>涉及场景</th><th>信息处理情况</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td data-label="第三方名称">TapADN 广告服务<br>（上海艾得蒽数字科技有限公司）</td>
+    <td data-label="涉及场景">仅在您主动点击「看广告补电力」并确认观看时</td>
+    <td data-label="信息处理情况">
+      <b>收集的信息：</b>广告标识符（OAID）、Android ID、网络连接类型与网络状态、粗略设备信息（机型、系统版本、屏幕尺寸）、广告展示与点击记录。<br>
+      <b>使用目的：</b>广告请求与素材匹配、广告频次控制、广告效果统计与结算、反作弊。<br>
+      <b>收集方式：</b>由广告 SDK 在本游戏进程内直接读取并发送至广告服务端，<b>不经过我们，我们无法读取也无法留存</b>。<br>
+      <b>已关闭的能力：</b>位置信息、电话状态与设备序列号、外部存储读写、应用安装列表、传感器（摇一摇）。<br>
+      <b>其隐私政策：</b>请见 TapADN / Dirichlet 媒体平台公示的隐私政策与合规指南。
+    </td>
+  </tr>
+  <tr>
+    <td data-label="第三方名称">TapTap（易玩（上海）网络科技有限公司）</td>
+    <td data-label="涉及场景">您通过 TapTap 客户端发现、下载或以试玩方式运行本游戏时</td>
+    <td data-label="信息处理情况">TapTap 客户端的账号登录、实名认证、支付、社区互动等功能由 TapTap 独立提供并依其自身的隐私政策处理您的信息，与我们无关，我们不会从 TapTap 获取您的任何个人信息。TapTap 的隐私政策请见其客户端内公示内容。</td>
+  </tr>
+  <tr>
+    <td data-label="第三方名称">您的设备与操作系统（Android）</td>
+    <td data-label="涉及场景">系统层面的运行环境</td>
+    <td data-label="信息处理情况">由设备厂商与操作系统提供方依其自身政策处理，与我们无关。</td>
+  </tr>
+  </tbody>
+</table>
+<p class="note">如果未来版本中我们接入了上述之外的第三方服务，我们会在本页面更新第三方清单（包含名称、使用目的、收集的信息类型及其隐私政策链接），并在游戏内以显著方式提示您；在您同意之前，我们不会启用上述服务。本页面顶部载明的更新日期会同步更新。</p>
+
+<h2 id="s6">六、我们如何保护您的个人信息</h2>
+<p>我们采取下列措施保护您的信息安全：</p>
+<ul>
+  <li><b>最小化原则</b>：从产品设计上不收集个人信息，从源头消除信息泄露风险；</li>
+  <li><b>本地隔离</b>：游戏数据保存在应用私有目录中，受 Android 系统沙箱机制保护，其他应用无法读取；</li>
+  <li><b>传输环节</b>：游戏本体没有任何上传行为，您的存档、设置、电力数据不会离开您的设备。唯一存在网络传输的环节是广告：您观看广告时，广告服务商与您的设备之间会按 HTTPS 传输广告素材及其投放所需的设备标识（详见第五节），该传输由广告服务商按其安全规范实施。</li>
+</ul>
+<p>尽管我们已尽合理努力，但请您理解，互联网环境并非百分之百安全。若发生个人信息安全事件，我们将按照法律法规的要求及时向您告知事件基本情况、可能的影响、我们已采取或将要采取的处置措施、您可自主防范和降低风险的建议，以及您可采取的补救措施。</p>
+
+<h2 id="s7">七、您如何管理您的个人信息</h2>
+<p>由于本游戏不收集您的个人信息，您无需通过我们行使查阅、复制、更正、补充、删除等权利，您可直接在您的设备上完成全部管理操作：</p>
+<ul>
+  <li><b>查阅与更正</b>：游戏进度在游戏内实时可见；如需更正，可在游戏内直接操作。</li>
+  <li><b>删除</b>：通过「系统设置 → 应用 → 数独：脑力诊所 → 存储 → 清除数据」删除全部本地数据，或卸载本游戏。</li>
+  <li><b>撤回同意</b>：卸载本游戏即可视为撤回您对本政策的同意。撤回后我们将不再为您提供服务，但不影响撤回前基于您的同意已进行的处理。</li>
+  <li><b>注销账号</b>：本游戏不设账号体系，不存在需要注销的账号。</li>
+</ul>
+<p>您也可以通过本政策第十节载明的联系方式与我们联系。为保障安全，我们可能需要您提供必要信息以核实身份。对于您合理的请求，我们原则上不收取费用；对多次重复、超出合理限度的请求，我们可视情收取一定成本费用。对于无端重复、需要过多技术手段、给他人合法权益带来风险或不切实际的请求，我们可能会予以拒绝。</p>
+<p>在以下情形中，我们将无法响应您的请求：与我们履行法律法规规定的义务相关的；与国家安全、国防安全直接相关的；与公共安全、公共卫生、重大公共利益直接相关的；与刑事侦查、起诉、审判和执行判决等直接相关的；我们有充分证据表明个人信息主体存在主观恶意或滥用权利的；出于维护个人信息主体或其他个人的生命、财产等重大合法权益但又很难得到本人同意的；响应个人信息主体的请求将导致个人信息主体或其他个人、组织的合法权益受到严重损害的；涉及商业秘密的。</p>
+
+<h2 id="s8">八、我们如何处理未成年人的个人信息</h2>
+<p>我们非常重视对未成年人个人信息的保护。本游戏不收集任何个人信息，因此不涉及对未成年人个人信息的收集、使用、存储或对外提供。</p>
+<p>本游戏为单机益智游戏，不含付费项目、不含社交功能、不含任何不适宜未成年人接触的内容。游戏内含有可选的激励视频广告，广告素材由广告服务商提供并经其内容审核；如您不愿让未成年人接触广告，可引导其不使用广告入口，这不影响任何关卡内容与游戏进度。</p>
+<p>若您是未满 14 周岁的未成年人，请在您的父母或其他监护人的陪同下阅读本政策，并在取得监护人同意后使用本游戏。若您是未成年人的监护人，请您关注被监护人是否在您的授权同意之后使用本游戏；如对被监护人的个人信息有任何疑问，可通过本政策第十节的方式与我们联系。</p>
+
+<h2 id="s9">九、本隐私政策如何更新</h2>
+<p>我们的隐私政策可能会适时发生变更。<b>我们会在本页面上发布对本政策所做的任何变更</b>，更新后的政策自页面顶部载明的更新日期起生效。</p>
+<p>对于重大变更，我们还会提供更为显著的通知（包括在游戏内以弹窗或公告方式提示，或在版本更新说明中载明）。本政策所指的重大变更包括但不限于：我们的服务模式发生重大变化，如处理个人信息的目的、类型、方式发生变化；个人信息共享、转让或公开披露的主要对象发生变化；您参与个人信息处理方面的权利及其行使方式发生重大变化；我们负责处理个人信息安全的联络方式发生变化。</p>
+<p>我们建议您定期查阅本页面，以了解最新版本。我们不会削减您依据本政策所应享有的权利。</p>
+
+<h2 id="s10">十、如何联系我们</h2>
+<p>如果您对本政策或个人信息保护有任何问题、意见或建议，或您认为我们的个人信息处理行为损害了您的合法权益，可以通过以下方式与我们联系：</p>
+<ul>
+  <li>运营主体：<b>竹谷荔工作室</b>（个人开发者）</li>
+  <li>联系邮箱：<b>3521753479@qq.com</b></li>
+</ul>
+<p>一般情况下，我们将在十五个工作日内回复。如果您对我们的回复不满意，特别是我们的个人信息处理行为损害了您的合法权益，您还可以向网信、电信、公安及市场监督管理等主管部门投诉或举报，也可以向有管辖权的人民法院提起诉讼。</p>
+
+<footer>
+  <p>本政策自 2026 年 10 月 29 日起生效，适用于「数独：脑力诊所」Android 版本及通过 TapTap 平台运行的版本。</p>
+  <p>本政策不适用于 TapTap 客户端、Android 操作系统及其他第三方服务，上述服务适用其各自的隐私政策。</p>
+</footer>
+
+</div>
+</body>
+</html>
